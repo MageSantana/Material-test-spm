@@ -1,3 +1,4 @@
+// swift-tools-version: 6.2
 import PackageDescription
 
 let package = Package(
@@ -14,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "LyraMaterial",
-            url: "https://raw.githubusercontent.com/MageSantana/Material-test-spm/1.0.7/LyraMaterial.xcframework.zip",
+            url: "https://github.com/MageSantana/Material-test-spm/releases/download/1.0.7/LyraMaterial.xcframework.zip",
             checksum: "8e96770fd7377348d869fc5c25c7745ce1470994848b52f13a70a2d32504add9"
         )
     ]
