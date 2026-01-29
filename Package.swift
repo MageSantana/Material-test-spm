@@ -12,6 +12,12 @@ let package = Package(
             targets: ["LyraMaterial"]
         )
     ],
+    dependencies: [
+        .package(
+            url: "https://github.com/MageSantana/Motion",
+            exact: "1.0.10"
+        )
+    ],
     targets: [
         .binaryTarget(
             name: "LyraMaterial",
