@@ -14,23 +14,22 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/MageSantana/Motion",
+            url: "https://github.com/MageSantana/Motion.git",
             exact: "1.0.10"
         )
     ],
     targets: [
         .binaryTarget(
             name: "LyraMaterial",
-            url: "https://raw.githubusercontent.com/MageSantana/Material-test-spm/1.0.13/LyraMaterial.xcframework.zip",
+            url: "https://raw.githubusercontent.com/MageSantana/Material-test-spm/1.0.14/LyraMaterial.xcframework.zip",
             checksum: "8e96770fd7377348d869fc5c25c7745ce1470994848b52f13a70a2d32504add9"
         ),
          .target(
-            name: "LyraMaterialWrapper",
+            name: "LyraMaterial",
             dependencies: [
                 "LyraMaterial",
                 .product(name: "LyraMotion", package: "LyraMotion")
-            ],
-            path: "Sources/LyraMaterialWrapper"
+            ]
         )
     ]
 )
