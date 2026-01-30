@@ -28,7 +28,7 @@ let package = Package(
             name: "LyraMaterialTarget",
             dependencies: [
                 "LyraMaterialBinary",
-                .product(name: "LyraMotion", package: "LyraMotion")
+                .product(name: "LyraMotion", package: "Motion")
             ]
         )
     ]
