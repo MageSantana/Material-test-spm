@@ -9,7 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "LyraMaterial",
-            targets: ["LyraMaterial"]
+            targets: ["LyraMaterialTarget"]
         )
     ],
     dependencies: [
@@ -20,15 +20,15 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "LyraMaterial",
-            url: "https://raw.githubusercontent.com/MageSantana/Material-test-spm/1.0.14/LyraMaterial.xcframework.zip",
+            name: "LyraMaterialBinary",
+            url: "https://raw.githubusercontent.com/MageSantana/Material-test-spm/1.0.15/LyraMaterial.xcframework.zip",
             checksum: "8e96770fd7377348d869fc5c25c7745ce1470994848b52f13a70a2d32504add9"
         ),
-         .target(
-            name: "LyraMaterial",
+        .target(
+            name: "LyraMaterialTarget",
             dependencies: [
-                "LyraMaterial",
-                .product(name: "LyraMotion", package: "LyraMotion")
+                "LyraMaterialBinary",
+                .product(name: "LyraMotion", package: "Motion")
             ]
         )
     ]
